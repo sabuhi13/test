@@ -2,6 +2,12 @@
 
 Bu, veb tədbiqlər (əsasən API) üçün sadə, oxunaqlı və sürətli uri yönləndirmə kitabxanasıdır.
 
+# Features
+
+* Prefixlər üçün alias
+* Prefix və kontrollerə görə qruplaşdırma
+* Parametrlərlrə dinamik yönləndirmə
+
 # Installation
 
 You can install the package via composer:
