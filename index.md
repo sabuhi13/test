@@ -4,32 +4,33 @@ You can use the [editor on GitHub](https://github.com/sabuhi13/test/edit/gh-page
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-```php
-<?php
-
-echo "test blet!";
-```
-
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+```php
+<?php
 
-# Header 1
-## Header 2
-### Header 3
+use Saboohy\Conductor\Collection;
+use Saboohy\Conductor\Router;
+use App\Controllers\UserController; // for testing
 
-- Bulleted
-- List
+$app = new Collection();
 
-1. Numbered
-2. List
+$app->alias('admin', '/api/admin');
 
-**Bold** and _Italic_ and `Code` text
+$app->prefix('@admin', function($route) {
+  $route->controller(UserController::class, function($user) {
+    $user->subPrefix('/user');
+    $user->get('/', 'index');
+    $user->post('/', 'create');
+    $user->get('/{num}', 'read');
+    $user->put('/{num}', 'update');
+    $user->delete('/{num}', 'delete');
+  });
+});
 
-[Link](url) and ![Image](src)
+Router::run($app->collections());
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
