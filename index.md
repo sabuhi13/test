@@ -1,3 +1,7 @@
+# About
+
+Bu, veb tədbiqlər (əsasən API) üçün sadə, oxunaqlı və sürətli uri yönləndirmə kitabxanasıdır.
+
 # Installation
 
 You can install the package via composer:
