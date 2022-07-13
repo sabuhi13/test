@@ -1,5 +1,4 @@
-remote_theme: just-the-docs/just-the-docs
-theme: just-the-docs
+theme: jekyll-theme-minimal
 title: test title
 logo: https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png
 description: Minimal is a theme for GitHub Pages.
