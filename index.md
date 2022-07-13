@@ -1,20 +1,6 @@
 # About
 
-Bu, veb tədbiqlər (əsasən API) üçün sadə, oxunaqlı və sürətli uri yönləndirmə kitabxanasıdır.
-
-# Features
-
-* Prefixlər üçün alias
-* Prefix və kontrollerə görə qruplaşdırma
-* Parametrlərlrə dinamik yönləndirmə
-
-# Installation
-
-You can install the package via composer:
-
-```bash
-composer require saboohy/conductor
-```
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 # Usage
 
