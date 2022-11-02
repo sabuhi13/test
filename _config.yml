@@ -3,6 +3,9 @@ title: test title
 description: Minimal is a theme for GitHub Pages.
 show_downloads: true
 
+gh_edit_repository: "https://github.com/just-the-docs/just-the-docs"
+footer_content: "Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an <a href=\"https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt\">MIT license.</a>"
+
 # Aux links for the upper right navigation
 aux_links:
   "Just the Docs on GitHub":
