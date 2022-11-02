@@ -15,11 +15,9 @@ use App\Controllers\UserController; // for testing
 
 $app = new Collection();
 
-$app->alias('admin', '/api/admin');
-
-$app->prefix('@admin', function($route) {
-    $route->controller(UserController::class, function($user) {
-        $user->subPrefix('/user');
+$app->prefix('api/admin')->group(function($route) {
+    $route->controller(UserController::class)->group(function($user) {
+        $user->subprefix('/user');
         $user->get('/', 'index');
         $user->post('/', 'create');
         $user->get('/{num}', 'read');
